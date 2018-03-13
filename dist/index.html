@@ -1,0 +1,563 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+
+    <!doctype html>
+    <html class="no-js" lang="en" dir="ltr">
+      <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="chrome">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AE1</title>
+        <link rel="stylesheet" href="assets/css/app.css">
+      <style>
+          @font-face {
+            font-family: "myFirstFont";
+            src: url(sansation_light.woff);
+          }
+          #hero{
+            background-image: url("assets/img/home-background.png");
+            background-size: cover;
+            background-position: bottom;
+            position: relative;
+          }
+          #hero:after {
+            background-image: url("assets/img/hero-edges.png");
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            content: "";
+          }
+          .footer{
+            background-image: url("assets/img/site-footer.png");
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          .footer:before{
+            
+          }
+          .search-icon{
+            display: inline-block;
+            content: "";
+            background-image: url(/ae1/src/assets/img/sprite-2x-scb2baf8f1a.png);
+            background-position: 0 -96px;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            display: inline-block;
+            height: 24px;
+            width: 23px;
+            margin-top: 2px;
+        }
+        
+        .search-icon.submit:after{
+            display: inline-block;
+            vertical-align: top;
+            background-color: transparent;
+            border: 2px solid #000;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            cursor: pointer;
+            -moz-transition: all .3s ease-out;
+            -o-transition: all .3s ease-out;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+        }
+        
+        .logo__img{
+          width: 185px;
+        }  
+        
+        .search{
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        
+          .h1_header{
+            font-family: "FuturTligRo1","Helvetiva Neue",Helvetiva,Arial,Sans-serif;
+            font-size: 3.4375em;
+            color: #000000;
+            letter-spacing: 2.29px;
+            line-height: 68px;
+            text-align: left;
+            margin-left: 30px;
+          }
+          
+          .h2_header{
+            font-family: "FuturTligRo1","Helvetiva Neue",Helvetiva,Arial,Sans-serif;
+            color: #000000;
+            letter-spacing: 2.29px;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: left;
+            margin-left: 30px;
+          }
+          
+          .width_search_half{
+            width: 150px;
+          }
+          
+          .width_search_full{
+            width: 300px;
+          }
+          
+          .height_search{
+            height: 100px;
+          }
+          
+          .margin_left{
+            margin-left: 30px;
+          }
+          
+          .margin_right{
+            margin-right: 30px;
+          }
+          
+          .margin_main{
+            margin-top: 50px;
+          }
+          
+          .margin_top_50{
+            margin-top: 50px;
+          }
+          
+          .margin_top_75{
+            margin-top: 75px;
+          }
+          
+          .margin_btm_10{
+            margin-bottom: 10px;
+          }
+          
+          .margin_btm_100{
+            margin-bottom: 100px;    
+          }
+          
+          .margin_btm_100{
+            margin-bottom: 100px;
+          }
+          
+          .margin_btm_50{
+            margin-bottom: 50px;
+          }
+          
+          .margin_btm_25{
+            margin-bottom: 25px;
+          }
+          
+          .margin_btm_150{
+            margin-bottom: 150px;
+          }
+          
+          .margin{
+            margin:10px;
+          }
+          
+          .margin_search_center{
+            margin:30px;
+          }
+          
+          .padding_left{
+            padding-left:30px;
+          }
+          
+          li a:hover{
+            text-decoration: underline;
+            text-decoration-color: white;
+            color: white;
+          }
+    
+          p a{
+            text-decoration: underline;
+            text-decoration-color: purple;
+            color: purple;
+          }
+          p a:hover{
+            color: black;
+          }
+      
+          li a{
+            color:white;
+          }
+          
+          h5{
+            color:black;
+          }
+          
+          h5:hover{
+            text-decoration: underline;
+            text-decoration-color: black;
+            color:black;
+          }
+          
+          h6{
+            color:black;
+          }
+          
+      </style>
+      </head>
+      <body>
+        <div id="hero">
+          <div class="grid-x grid-padding-x grid-padding-y">
+            <div class="medium-2 large-2"></div>
+            <div class="cell medium-2 large-2 margin_btm_150">
+              <div class="logo__img margin_top_50">
+                <img src="https://www.hunterdunning.co.uk/wp-content/themes/hinge_client_theme/dist/images/hunter-dunning-logo.png" alt>
+              </div>
+            </div>
+          <div class="cell medium-2 large-2 margin_top_50"></div>
+          <div class="cell medium-5 large-5 menu-centered margin_top_75">
+            <nav class="top bar" data-topbar role="navigation">
+              <section class="top-bar-section">
+                <ul class=" menu align-center simple no-bullet">
+                  <li class="no-bullet"><h5 class="no-underline">+44 (0) 1243 779789</h5></li>
+                  <li class="no-bullet"><a href="https://www.hunterdunning.co.uk/jobs/"><h5>Jobs</h5></a></li>
+                  <li class="no-bullet"><a href="https://www.hunterdunning.co.uk/employers/"><h5>Employers</h5></a></li>
+                  <li class="menu-icon"><a href="#"></a></li>
+                </ul>
+              </section>
+            </nav>
+          </div>
+          
+          <div class="cell medium-1 large-1 margin_top_75"></div>
+          </div>
+          
+          <div class="grid-x">
+            <div class="medium-2 large-2"></div>    
+            <div class="medium-8 large-8 margin_btm_25" id="header">
+              <p class="h1_header">Property Recruitment Specialists</p>
+              <p class="h2_header">Design Develop Maintain & Manage</p>
+            </div>
+            <div class="medium-2 large-2"></div>    
+          </div>
+        
+          <div class="grid-x grid-padding-x hover">
+            <div class="medium-2 large-2"></div>
+            <ul class="menu medium-8 large-8 margin_left margin_right">
+              <li class="margin margin_left margin_right margin_btm_25">
+                <form>
+                  <label class="width_search_full height_search">
+                    <input type="text" placeholder="Search for Keywords">
+                  </label>
+                </form>
+              </li>
+              <li class="margin menu margin_btm_25">
+                <form>
+                  <label class="width_search_half height_search">
+                    <input id="myURL" name="myURL" type="text" list="defaultURLs1" placeholder="Job Type">
+                      <datalist id="defaultURLs1">
+                        <option value="Contract/Temporary">
+                        <option value="Permanent">
+                      </datalist>
+                  </label>
+                </form>
+              </li>
+              <li class="margin margin_btm_25">
+                <form>
+                  <label class="width_search_half height_search">
+                    <input id="myURL" name="myURL" type="text" list="defaultURLs2" placeholder="Category">
+                      <datalist id="defaultURLs2">
+                        <option value="Architects">
+                        <option value="Architectual Assistants">
+                        <option value="Interior Designers">
+                        <option value="Landscape Design & Planning">
+                        <option value="Senior Appointments">
+                        <option value="Technicians/Technologists">
+                        <option value="BIM Jobs">
+                        <option value="Property">
+                      </datalist>
+                  </label>
+                </form>        
+              </li>
+              <li class="margin margin_btm_25">
+                <form>
+                  <label class="width_search_half height_search">
+                    <input id="myURL" name="myURL" type="text" list="defaultURLs3" placeholder="Location">
+                      <datalist id="defaultURLs3">
+                        <option value="International">
+                        <option value="East Anglia">
+                        <option value="East Midlands">
+                        <option value="London">
+                        <option value="North">
+                        <option value="North East">
+                        <option value="North West">
+                        <option value="Scotland">
+                        <option value="South East">
+                        <option value="South West">
+                        <option value="Wales">
+                        <option value="West Midlands">
+                      </datalist>
+                  </label>
+                </form>        
+              </li>
+              <form>
+                <li class="search-icon">
+          				<button class="submit" type="submit"></button>
+          			</li>
+        			</form>
+            </ul>
+          </div>
+          
+          <div class="grid-x">
+            <div class="medium-2 large-2"></div>
+            <div class="medium-2 large-2 margin_left margin_btm_25"><h4>Focus on a Category</h4></div>
+            <div class="medium-2 large-2"></div>
+            <div class="medium-2 large-2 margin_btm_25"><h4>Focus on a Region</h4></div>
+            <div class="medium-2 large-2"></div>
+            <div class="medium-2 large-2"></div>
+          </div>
+          
+          <div class="grid-x">
+            <div class="medium-2 large-2"></div>
+            <div class="medium-2 large-2 margin_left">
+              <div>
+                <ul class="no-bullet">
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?category=architects" class="hover color_white">Architects</a></li>
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?category=interior-designers" class="hover color_white">Interior Designers</a></li>
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?category=senior-appointments" class="hover color_white">Senior Appointments</a></li>
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?category=bim-jobs" class="hover color_white">BIM Jobs</a></li>
+                </ul>  
+              </div>
+            </div>
+            <div class="medium-2 large-2 margin_btm_100">
+              <div>
+                <ul class="no-bullet">
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?category=architectural-assistants" class="hover color_white">Architectual Assistants</a></li>
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?category=landscape-design-planning" class="hover color_white">Landscape Design & Planning</a></li>
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?category=technicians-technologists" class="hover color_white">Technicians/Technologists</a></li>
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?category=property" class="hover color_white">Property</a></li>
+                </ul>  
+              </div>
+            </div>
+            <div class="medium-1 large-1 margin_btm_100">
+              <div>
+                <ul class="no-bullet">
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?location=international" class="hover color_white">International</a></li>
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?location=london" class="hover color_white">London</a></li>
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?location=north-west" class="hover color_white">North West</a></li>
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?location=south-west" class="hover color_white">South West</a></li>
+                </ul>  
+              </div>
+            </div>
+            <div class="medium-1 large-1 margin_btm_100">
+              <div>
+                <ul class="no-bullet">
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?location=east-anglia" class="hover color_white">East Anglia</a></li>
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?location=north" class="hover color_white">North</a></li>
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?location=scotland" class="hover color_white">Scotland</a></li>
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?location=wales" class="hover color_white">Wales</a></li>
+                </ul>  
+              </div>
+            </div>
+            <div class="medium-1 large-1 margin_btm_100">
+                  <ul class="no-bullet">
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?location=east-midlands" class="hover color_white">East Midlands</a></li>
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?location=north-east" class="hover color_white">North East</a></li>
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?location=south-east" class="hover color_white">South East</a></li>
+                  <li class="margin_btm_10"><a href="https://www.hunterdunning.co.uk/jobs/?location=west-midlands" class="hover color_white">West Midlands</a></li>
+                </ul>  
+            </div>
+          </div>
+        </div>
+    <div class="medium-3 large-3"></div>
+    
+    <div class="grid-x">
+      <div class="medium-2 large-2"></div>
+        <div class="medium-8 large-8 callout">
+          <h4>FEATURED JOBS</h4>
+        </div>
+      <div class="medium-2 large-2"></div>
+    </div>
+    
+    <div class="grid-x">
+      <div class="grid medium-2 large-2 "></div>
+      <div class="grid-x medium-8 large-8 callout">
+        <div class="medium-4 large-4 callout">
+          <a href="https://www.hunterdunning.co.uk/jobs/architect-for-high-end-residential-specialist-oxford-oxfordshire/">ARCHITECT FOR HIGH-END RESIDENTIAL SPECIALIST – OXFORD, OXFORDSHIRE</a>
+          <p></p>
+          <p>£38,000 - £45,000</p>
+          <p>A new opportunity for an Architect to join a thriving multidisciplinary practice. You will run your own projects from concept through to completion. Benefits include a competitive salary and the chance to join a growing team within an established and reputable practice.</p>
+          <a href="https://www.hunterdunning.co.uk/jobs/architect-for-high-end-residential-specialist-oxford-oxfordshire/">Find out more</a>  -  
+          <a href="https://www.hunterdunning.co.uk/jobs/architect-for-high-end-residential-specialist-oxford-oxfordshire/?apply=std">Apply now</a>
+        </div>
+        <div class="medium-4 large-4 callout">
+          <a href="https://www.hunterdunning.co.uk/jobs/associate-senior-associate-residentialmixed-use-project-experience-ec1-london/">ASSOCIATE / SENIOR ASSOCIATE ( RESIDENTIAL/MIXED - USE PROJECT EXPERIENCE) - EC1, LONDON</a>
+          <p></p>
+          <p>DOE £50,000 - £55,000</p>
+          <p>My client has experience of over 25 years in business and is a well-known national practice. They have built a successful business, by being business minded but balancing this with architectural flair and pragmatism. They believe this provides speedy, buildable planning approvals and pragmatic construction solutions, whilst achieving maximum value for their clients. They now have the requirement for an associate or senior associate to join their team.</p>
+          <a href="https://www.hunterdunning.co.uk/jobs/associate-senior-associate-residentialmixed-use-project-experience-ec1-london/">Find out more</a>  -  
+          <a href="https://www.hunterdunning.co.uk/jobs/associate-senior-associate-residentialmixed-use-project-experience-ec1-london/?apply=std">Apply now</a>
+        </div>
+        <div class="medium-4 large-4 callout">
+          <a href="https://www.hunterdunning.co.uk/jobs/part-ii-architectural-assistant-high-end-bespoke-residential-experience-knightsbridge-london/">PART II ARCHITECTURAL ASSISTANT - (HIGH-END / BESPOKE RESIDENTIAL EXPERIENCE) - KNIGHTSBRIDGE, LONDON</a>
+          <p></p>
+          <p>Up to £30,000 DOE</p>
+          <p>A friendly, boutique-sized architecture practice is looking for an experienced Part II Architectural Assistant to join their beautiful Belgravia office. An excellent opportunity for anyone looking to work on contemporary residential refurbishments and new builds for both, private clients and developers.</p>
+          <a href="https://www.hunterdunning.co.uk/jobs/part-ii-architectural-assistant-high-end-bespoke-residential-experience-knightsbridge-london/">Find out more</a>  -  
+          <a href="https://www.hunterdunning.co.uk/jobs/part-ii-architectural-assistant-high-end-bespoke-residential-experience-knightsbridge-london/?apply=std">Apply now</a>
+        </div>
+      </div>
+    </div>
+    <div class="grid-x">
+    <div class="grid medium-2 large-2 "></div>
+      <div class="grid-x medium-8 large-8 callout">
+        <div class="medium-4 large-4 callout">
+          <a href="https://www.hunterdunning.co.uk/jobs/architectural-technologist-guildford-surrey/">ARCHITECTURAL TECHNOLOGIST – GUILDFORD, SURREY</a>
+          <p></p>
+          <p>£30,000 - £35,000</p>
+          <p>The opportunity has arisen for a fast paced and ambitious Architectural Technician/Technologist to join an expanding property consultancy in Guildford. My client works within the bespoke high end residential sector and offers all employees very real opportunities for career progression and professional development.</p>
+          <a href="https://www.hunterdunning.co.uk/jobs/architectural-technologist-guildford-surrey/">Find out more</a>  -  
+          <a href="https://www.hunterdunning.co.uk/jobs/architectural-technologist-guildford-surrey/?apply=std">Apply now</a>
+        </div>
+        <div class="medium-4 large-4 callout">
+          <a href="https://www.hunterdunning.co.uk/jobs/managing-director-north-london/">MANAGING DIRECTOR - NORTH LONDON</a>
+          <p></p>
+          <p>£60,000 - £80,000 basic. Up to £120,000 OTE</p>
+          <p>Join a well-established and creative company as their Managing Director and take responsibility of all aspects of the business while under guidance of its holding company. The role offers an OTE of £120k per annum and the opportunity to take the reins of a very exciting business.</p>
+          <a href="https://www.hunterdunning.co.uk/jobs/managing-director-north-london/">Find out more</a>  -  
+          <a href="https://www.hunterdunning.co.uk/jobs/managing-director-north-london/?apply=std">Apply now</a>
+        </div>
+        <div class="medium-4 large-4 callout">
+          <a href="https://www.hunterdunning.co.uk/jobs/senior-fb-hospitality-interior-designer-shoreditch-london/">SENIOR F&B / HOSPITALITY INTERIOR DESIGNER - SHOREDITCH, LONDON</a>
+          <p></p>
+          <p>£45,000 - £55,000+</p>
+          <p>Do you pride yourself in your creative skills and knowledge of the F&B/hospitality sector? An international restaurant chain is looking for a top-notch Senior Interior Designer with outstanding creative skills and all-round abilities to join their in-house design team. If you are looking for a place to be your artistic self and get an incredible salary and perks while doing so, this is the opportunity for you!</p>
+          <a href="https://www.hunterdunning.co.uk/jobs/senior-fb-hospitality-interior-designer-shoreditch-london/">Find out more</a>  -  
+          <a href="https://www.hunterdunning.co.uk/jobs/senior-fb-hospitality-interior-designer-shoreditch-london/?apply=std">Apply now</a>
+        </div>
+      </div>
+    </div>
+    <div class="grid-x">
+    <div class="grid medium-2 large-2 "></div>
+      <div class="grid-x medium-8 large-8 callout">
+        <div class="medium-4 large-4 callout">
+          <a href="https://www.hunterdunning.co.uk/jobs/technical-revit-detailer-islington-london/">TECHNICAL REVIT DETAILER - ISLINGTON, LONDON</a>
+          <p></p>
+          <p>£30,000 - £40,000 DoE</p>
+          <p>Do you want to work for an AJ Top 30 company based in one of the most tranquil locations alongside Regent’s Canal in Islington, with a great working environment for staff? Our client is now looking for a Technical Revit Detailer.</p>
+          <a href="https://www.hunterdunning.co.uk/jobs/technical-revit-detailer-islington-london/">Find out more</a>  -  
+          <a href="https://www.hunterdunning.co.uk/jobs/technical-revit-detailer-islington-london/?apply=std">Apply now</a>
+        </div>
+        <div class="medium-4 large-4 callout">
+          <a href="https://www.hunterdunning.co.uk/jobs/project-surveyor/">PROJECT SURVEYOR - WITNEY, OXFORDSHIRE</a>
+          <p></p>
+          <p>Up to £50,000 + Benefits</p>
+          <p>One of the UK’s leading home builders and timber systems manufacturers is looking to recruit a Project Surveyor. With developments across Scotland and the north west of England they design and build a wide range of residential homes for a range of customers from mews homes to family homes and luxury apartments.</p>
+          <a href="https://www.hunterdunning.co.uk/jobs/project-surveyor/">Find out more</a>  -  
+          <a href="https://www.hunterdunning.co.uk/jobs/project-surveyor/?apply=std">Apply now</a>
+        </div>
+        <div class="medium-4 large-4 callout">
+          <p></p>
+        </div>
+      </div>
+    </div>
+      <div class="grid medium-2 large-2 "></div>
+      <div class="grid medium-3 large-3"></div>
+    </div>
+      
+    <div class="grid-x grid-padding-x"> <!-- Grid wrapper -->
+    <div class="medium-2 large-2 "></div>  <!-- White space 3 -->
+    <div class="medium-4 large-4 cell callout"> <!-- Quote 3 -->
+      <p><b>WE WORK WITH SOME GREAT COMPANIES</b></p>
+      <p>Private Practices, Public Sector Authorities, Consultancies & Housing Associations. Come see who we work with.</p>
+      <p><a  href="https://www.hunterdunning.co.uk/partners/"><h5>See all of the</a>  -  <a href="https://www.hunterdunning.co.uk/contact-us/">Become one of them</h5></a></p>
+      <p><b>WHAT DO OUR CLIENTS & PARTNERS SAY?</b></p>
+      <p><quote> "Without a doubt, Gaby is one of the most friendly recruiters that I met. Gaby made this very stressful process easy on me and was always ready to answers my questions and reassure that the things are going to be fine! The entire recruitment process took only about one week, 
+      from the first interview to the offer confirmation. Gaby ensured that this process was easy to go through and I was always informed and up to date with feedbacks from employers and tips that could potentially help me to win position I wanted!
+      Also, above it all, Gaby was great in envisioning the environment of work that I was hoping to be a part of, understood all my needs, skills and translated them into some very fruitful interviews and helped me to secure a position that I suited the most.
+      The position that I held at the moment could not be a better match.
+      I am ever so grateful for Gaby’s help and would highly recommend her"!</quote></p>
+      <p><cite><strong>SYLWIA LUBIAN - SENIOR INTERIOR DESIGNER</strong></cite></p>
+    </div>
+      <div class="medium-4 large-4 cell"> <!-- 3x3 Grid -->
+          <div class="grid-x grid-padding-x">
+            <div class=" medium-4 large-4 cell callout">
+              <img src="https://www.hunterdunning.co.uk/wp-content/uploads/2015/06/logo8.png" alt>
+            </div>
+            <div class=" medium-4 large-4 callout">
+              <img src="https://www.hunterdunning.co.uk/wp-content/uploads/2015/06/logo8.png" alt>
+            </div>
+            <div class=" medium-4 large-4 callout">
+              <img src="https://www.hunterdunning.co.uk/wp-content/uploads/2015/06/logo8.png" alt>
+            </div>
+          </div>
+        <div class="grid-x grid-padding-x">
+          <div class=" medium-4 large-4 cell callout">
+            <img src="https://www.hunterdunning.co.uk/wp-content/uploads/2015/06/logo8.png" alt>
+          </div>
+          <div class=" medium-4 large-4 callout">
+            <img src="https://www.hunterdunning.co.uk/wp-content/uploads/2015/06/logo8.png" alt>
+          </div>
+          <div class=" medium-4 large-4 callout">
+            <img src="https://www.hunterdunning.co.uk/wp-content/uploads/2015/06/logo8.png" alt>
+          </div>
+        </div>
+        <div class="grid-x grid-padding-x">
+          <div class=" medium-4 large-4 cell callout">
+            <img src="https://www.hunterdunning.co.uk/wp-content/uploads/2015/06/logo8.png" alt>
+          </div>
+          <div class=" medium-4 large-4 callout">
+            <img src="https://www.hunterdunning.co.uk/wp-content/uploads/2015/06/logo8.png" alt>
+          </div>
+          <div class=" medium-4 large-4 callout">
+            <img src="https://www.hunterdunning.co.uk/wp-content/uploads/2015/06/logo8.png" alt>
+          </div>
+        </div>
+      </div>
+    <div class="medium-2 large-2 "></div>  <!-- White space 3 -->
+    </div>
+    
+    <div class="footer">
+          <div class="grid-x">
+            <div class="medium-2 large-2"></div>
+            <div class="cell medium-4 large-4 margin_top_75">
+              <p>© 2018 HUNTERDUNNING LTD.<a href="#">DESIGN & BUILD BY HINGE LTD</a></p>
+            </div>
+          <div class="cell medium-6 large-6 menu-centered margin_top_75">
+            <nav class="top bar" data-topbar role="navigation">
+              <section class="top-bar-section">
+                <ul class=" menu align-center simple no-bullet">
+                  <li class="no-bullet"><a href="#"><h5>Contact Us</h5></a></li>
+                  <li class="no-bullet"><a href="#"><h5>Architecture Jobs</h5></a></li>
+                  <li class="no-bullet"><a href="#"><h5>Terms & Conditions</h5></a></li>
+                  <li class="no-bullet"><a href="#"><h5>Privacy Policy</h5></a></li>
+                </ul>
+              </section>
+            </nav>
+          </div>
+        </div>
+    </div>
+        <script src="assets/js/app.js"></script>
+      </body>
+    </html>
+    
+    <!--
+    https://www.hunterdunning.co.uk/wp-content/themes/hinge_client_theme/dist/images/hero-edges.png
+    https://www.hunterdunning.co.uk/wp-content/themes/hinge_client_theme/dist/images/home-background.png
+    https://www.hunterdunning.co.uk/wp-content/themes/hinge_client_theme/dist/images/content-with-skyline-edges.png
+    https://www.hunterdunning.co.uk/wp-content/themes/hinge_client_theme/dist/images/skyline-half-centered.png
+    https://sketchviewer.com/sketches/5a6b17a6a507180011d90d2e/latest/C00A881F-BB47-49A3-921B-342483CF2F81
+    https://www.hunterdunning.co.uk/
+    https://foundation.zurb.com/sites/docs/xy-grid.html
+    BEM for images and CSS
+    https://en.bem.info/methodology/
+    ::after (places element after another element)-->
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

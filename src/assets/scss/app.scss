@@ -1,0 +1,125 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+// @include foundation-grid;
+// @include foundation-flex-grid;
+//
+@include foundation-xy-grid-classes;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+// @include foundation-float-classes;
+@include foundation-flex-classes;
+
+// @include foundation-prototype-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+/* .header{
+    position: absolute;
+    top: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 0;
+    width: 100%;
+        .conatiner{
+            width: 85%;
+            position: relative;
+            height: 100%;
+            margin: 0 auto;
+                }
+                .logo{
+                    display: inline-block;
+                    width: 185px;
+                    z-index: 2;
+                    position: relative;  
+                }
+                .navigation{
+                    display: inline-block;
+                    position: absolute;
+                    top: 20px;
+                    right: 0;
+                    width: 100%;
+                    z-index: 1;
+                    text-align: right;
+                }
+}
+
+.tile{
+    display: block;
+    padding: 100px 0;
+        .hero{
+            background-image: url(https://www.hunterdunning.co.uk/wp-content/themes/hinge_client_theme/dist/images/home-background.png);
+            background-size: contain;
+            background-position: bottom;
+            position: relative;
+            padding-bottom: 200px;
+            padding-top: 243px;
+            background-repeat: no-repeat;
+        }
+}
+
+.tile.hero:after{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    background-image: url(https://www.hunterdunning.co.uk/wp-content/themes/hinge_client_theme/dist/images/content-with-skyline-edges.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.margin-btm-150{
+    margin-bottom: 150px;
+}
+.margin-top-50{
+    margin-top: 50px;
+}
+.margin-top-75{
+    margin-top: 75px;
+}
+*/
