@@ -52,74 +52,348 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-/* .header{
-    position: absolute;
-    top: 70px;
-    padding-left: 10px;
-    padding-right: 10px;
-    left: 0;
-    width: 100%;
-        .conatiner{
-            width: 85%;
-            position: relative;
-            height: 100%;
-            margin: 0 auto;
-                }
-                .logo{
-                    display: inline-block;
-                    width: 185px;
-                    z-index: 2;
-                    position: relative;  
-                }
-                .navigation{
-                    display: inline-block;
-                    position: absolute;
-                    top: 20px;
-                    right: 0;
-                    width: 100%;
-                    z-index: 1;
-                    text-align: right;
-                }
+#overall-margin{
+  margin: 10px;
 }
-
-.tile{
-    display: block;
-    padding: 100px 0;
-        .hero{
-            background-image: url(https://www.hunterdunning.co.uk/wp-content/themes/hinge_client_theme/dist/images/home-background.png);
-            background-size: contain;
-            background-position: bottom;
-            position: relative;
-            padding-bottom: 200px;
-            padding-top: 243px;
-            background-repeat: no-repeat;
-        }
+#hero{
+  background-image: url("assets/img/home-background.png");
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
 }
-
-.tile.hero:after{
-    display: inline-block;
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 180px;
-    background-image: url(https://www.hunterdunning.co.uk/wp-content/themes/hinge_client_theme/dist/images/content-with-skyline-edges.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    -webkit-background-size: 100%;
-    background-size: 100%;
+#hero:after {
+  background-image: url("assets/img/hero-edges.png");
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
 }
-
-.margin-btm-150{
-    margin-bottom: 150px;
+.mid-section{
+  text-align: center;
+  position: relative;
+  top: 0;
+  display: inline-block;
+  width: 801px;
 }
-.margin-top-50{
-    margin-top: 50px;
+.mid-section:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 34px;
+  width: 100%;
+  content: "";
+  background-image: url("assets/img/content-with-skyline-edges.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.margin-top-75{
-    margin-top: 75px;
+#footer{
+  background-image: url("assets/img/site-footer.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+}
+#footer:before{
+  display: inline-block;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url("assets/img/footer-edges-grey.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-grey{
+  background-color: #F5F5F5;
+}
+.logo__img{
+  width: 185px;
+}  
+@font-face{
+  font-family: "Futura_light";
+  src: url("assets/Fonts/futura/futura light bt.ttf");
+}
+@font-face{
+  font-family: "Futura_book--ital";
+  src: url("assets/Fonts/futura/Futura Book Italic font.ttf");
+}
+@font-face{
+  font-family:"Futura_book";
+  src: url("assets/Fonts/futura/Futura Book font.ttf")
+}
+@font-face{
+  font-family: "Gotham_book";
+  src: url("assets/Fonts/Gotham/Gotham-Book.otf")
+}
+@font-face{
+  font-family:"Gotham_Medium";
+  src: url("assets/Fonts/Gotham/Gotham-Medium.otf");
+}
+.h1_header{
+  font-family: "Futura_light";
+  font-size: 3.4375em;
+  color: #000000;
+  letter-spacing: 2.29px;
+  line-height: 68px;
+  text-align: left;
+  margin-left: 30px;
+}
+.h2_header{
+  font-family: "Futura_light";
+  font-size: 40px;
+  line-height: 48px;
+  text-align: left;
+  margin-left: 30px;
+}
+.h3_header{
+  font-family: "Futura_book";
+  font-size: 1.0625em;
+  color: #464646;
+  letter-spacing: 1.39px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+.h4_header{
+  font-family: "Futura_book--ital";
+  font-size: 1.375em;
+  color: #464646;
+  letter-spacing: 3px;
+  line-height: 31px;
+  text-transform: uppercase;
+}
+.h4_lower-header{
+  font-family: "Futura_book";
+  font-size: 1.375em;
+  color: #464646;
+  letter-spacing: 3px;
+  line-height: 31px;
+  text-transform: uppercase;
+}
+.h4_lower_text1{
+  font-family: "Gotham_book";
+  font-size: .9375em;
+  color: #464646;
+  line-height: 27px;
+}
+.h4_lower_text2{
+  font-family: "Gotham_book";
+  font-size: .9375em;
+  color: #464646;
+  line-height: 27px;
+}
+.lower_text-subheader{
+  font-family: "Futura_book";
+  font-size: 1.0625em;
+  color: #464646;
+  letter-spacing: 1.39px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+.h4_lower-cite{
+  display: block;
+  text-transform: uppercase;
+  font-size: .75em;
+  color: #464646;
+  letter-spacing: 0.75px;
+  line-height: 29px;
+  margin-top: 10px;
+  font-family: "Gotham_Medium"
+}
+.h4_lower-header:after{
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #B11486;
+  content: "";
+  margin-top: 15px;
+}
+#featured-jobs:after{
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #B11486;
+  content: "";
+  margin-top: 15px;
+}
+.job-headers{
+  font-family: "Futura_book";
+  font-size: 1.0625em;
+  color: #464646;
+  letter-spacing: 1.39px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+.width_search_half{
+  width: 150px;
+}
+.width_search_full{
+  width: 300px;
+}
+.height_search{
+  height: 100px;
+}
+.margin_left{
+  margin-left: 30px;
+}
+.margin_right{
+  margin-right: 30px;
+}
+.margin_main{
+  margin-top: 50px;
+}
+.margin_top_50{
+  margin-top: 50px;
+}
+.margin_top_75{
+  margin-top: 75px;
+}
+.margin_top_125{
+  margin-top: 125px;
+}
+.margin_btm_10{
+  margin-bottom: 10px;
+}
+.margin_btm_100{
+  margin-bottom: 100px;    
+}
+.margin_btm_200{
+  margin-bottom: 200px;
+}
+.margin_btm_50{
+  margin-bottom: 50px;
+}
+.margin_btm_25{
+  margin-bottom: 25px;
+}
+.margin_btm_175{
+  margin-bottom: 175px;
+}
+.margin_btm_150{
+  margin-bottom: 150px;
+}
+.margin{
+  margin:10px;
+}
+.margin__right--50{
+  padding-right: 50px;
+}
+.margin_search_center{
+  margin:30px;
+}
+.padding_left{
+  padding-left:30px;
+}
+li a:hover{
+  text-decoration: underline;
+  text-decoration-color: white;
+  color: white;
+}
+li a span:hover{
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: black;
+}
+p a{
+  text-decoration: underline;
+  text-decoration-color: purple;
+  color: purple;
+}
+p a:hover{
+  color: black;
+}
+li a{
+  color:white;
+}
+ul li a p{
+  color: #B11486;
+}
+h5{
+  color:black;
+}
+h5:hover{
+  text-decoration: underline;
+  text-decoration-color: black;
+  color:black;
+}
+h6{
+  color:black;
+}
+nav a{
+  font-family: "Futura_book";
+  font-size: 1.0625em;
+  color: #464646;
+  letter-spacing: 1.39px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+nav p{
+  font-family: "Gotham_Book";
+  font-size: .9375em;
+  color: #464646;
+  line-height: 27px;
+}
+nav p a{
+  display: inline-block;
+  font-size: .875em;
+  color: #B11486;
+  line-height: 14px;
+  text-decoration: none;
+  font-family: "Gotham_Medium";
+}
+div p a{
+  display: inline-block;
+  font-size: 1.0625em;
+  color: #B11486;
+  line-height: 50px;
+  text-decoration: none;
+  font-family: "Gotham_Medium";
+}
+nav p a:after{
+  transition: all .3s ease-out;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #B11486;
+  margin-top: 3px;
+}
+li div img{
+  display: block;
+  content: "";
+  background-image: url(assets/img/sprite-s0790eeaa97.png);
+  background-position: 0 -96px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  height: 24px;
+  width: 23px;
+  margin: 5px;
+  padding-top: 24px;
+}
+.search-button{
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  content: "";
+  border: 3px solid black;
+}
+nav section ul li{
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Gotham_Book";
+  font-size: 1em;
+  color: black;
+  font-weight: 400;
+  line-height: 19px;
 }
 */
